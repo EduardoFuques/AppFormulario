@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  node12:
+    container_name: entorno-app-node12
+    image: entorno-app-node12
+    ports:
+      - ${PUERTO}:3000
+    volumes:
+      - ${APP_DIR}:/app
+    command: npm run dev
+    
