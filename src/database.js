@@ -1,6 +1,8 @@
 import pkg from 'mongoose';
 const { connect} = pkg
-connect("mongodb://Tester:2021UN4M@192.100.186.58:27010/app",{
+import { DB_CONNECT } from './server.js'
+
+connect(DB_CONNECT,{
     useNewUrlParser: true
 })
     .then(db => console.log('DB conectada'))

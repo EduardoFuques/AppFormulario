@@ -16,5 +16,17 @@
             </div>
         </div>
     </div>
+    {{else}}
+    <div class="form-group">
+        <div class="d-grid">
+            <div class="card mx-auto ">
+                <div class="card-body">
+                    <p class="lead">No hay notas aún</p>
+                    <a href="/notes/add" class="btn btn-success btn-block">Crear una nueva nota</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{/each}}
 </div>

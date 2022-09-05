@@ -39,4 +39,5 @@ router.get('/notes', async (_req, res) => {
     res.render('notes/all-notes', {notes})
 });
 
+
 export default router;
